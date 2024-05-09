@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/styles.css" />
+    <title>webshop</title>
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/header.style.css">
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <script type="module" src="./app.ts" defer></script>
+  </head>
+  <body>
+    <header>
+      <menu>
+        <h1>Webshop</h1>
+        <button class="cart-button" id="cartButton">
+          <img class="cart-icon" src="./assets/cart-icon.svg" alt="Cart">
+          <span class="badge" id="cartItemCount">0</span>
+        </button> 
+      </menu>
+       </header>
+
+    <main>
+      <form id="search-form">
+        <input type="text" name="search" placeholder="Search products">
+        <button type="submit">Search</button>      
+    </form>
+  <div id="product-list" class="product-list">
+
+  </div>  
+  </main>
+    
+  <!-- Modal to display cart contents -->
+  <div id="cartModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Cart</h2>
+      <div id="cartItems" class="cart-items"></div>
+      <button id="cartCheckoutButton">Checkout</button>
+    </div>
+  </div>
+  
+  </body>
+  </html>
